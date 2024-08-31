@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        body{
+            background-image:url("cafe14.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            
+        }
+        nav a{
+            text-decoration:none;
+            color:white;
+            text-align:center;
+            padding:20px;
+            float:left;
+        }
+        nav{
+            position:fixed;
+            background-color:rgb(10, 6, 6);
+            overflow:hidden;
+            width:100%;
+        }
+        nav a:hover{
+            color:#d3ad7f;
+        }
+        div.share{
+            float:right;
+
+        }
+        .register{
+           
+            border:ridge;
+            border-radius:4px;
+            padding:20px;
+            
+        }
+        .login{
+            border:ridge;
+            border-radius:4px;
+            padding:20px;
+           
+        }
+        p{
+            color:silver;
+            font-size:20px;
+        }
+        
+        input[type="email"],
+        input[type="password"]{
+            padding:10px;
+        }
+        input[type="submit"]:hover{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing:2px ;
+            background-color:rgb(221, 219, 219);
+
+        }
+        input[type="submit"]{
+            border:1px solid rgb(52, 175, 247);
+            color:rgb(52, 175, 247);
+            padding:15px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="#" class="logo">
+            <img src="1.png" alt="" width="70px">
+        </a>
+        <a href="coffeeshop.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="my_account.html">My Account</a>
+        <a href="menu.html">Menu</a>
+        <a href="payment_form.html">Payment Form</a> 
+
+        <a href="products.html">Products</a>
+        
+        <a href="contact_uss.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        
+        
+        
+  
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <header>
+    <h1 style="color:white;">Login</h1>
+    <div class="login">
+        <p>Username or email address <span style="color:red;">*</span></p>
+        <input type="email" id="email" required placeholder="Email Address">
+        <p>Password <span style="color:red;">*</span></p>
+        <input type="password" id="password" required>
+        <p><input type="submit" id="submit" value="Log in">&nbsp;&nbsp;<input type="checkbox" id="checkbox" value="">Remember me </p>
+        <a href="#""><span style="color:rgb(52, 175, 247);">Lost your password?</span></a>
+    </div>
+    <section>
+        <h1 style="color:white;"><strong>Register</strong></h1>
+        <div class="register">
+        
+    
+        <p>Email Address<span style="color:red;">*</span></p>
+        <input type="email" id="email" required placeholder="Email Address">
+        <p>Password <span style="color:red;">*</span></p>
+        <input type="password" id="password" required>
+        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our  <span style="color:rgb(52, 175, 247);"> privacy policy.</span></p>
+        <p><input type="submit" id="register" value="Register"></p>
+
+        
+        
+    </div>
+    </section>
+    </header>
+    
+    
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 10rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+p {
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+</style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="1.png" alt="">
+    </a>
+
+    <nav class="navbar">
+            <a href="coffeeshop.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="my_account.html">My Account</a>
+            <a href="menu.html">Menu</a>
+            <a href="payment_form.html">Payment Form</a>            
+
+            <a href="products.html">Products</a>
+            
+            <a href="contact_uss.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            
+
+    </nav>
+
+
+</section>
+<br>
+<br>
+<br>
+<section>
+<img src="seasongift.jpg" width="50%">
+
+<p id="demo"></p>
+    
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 30, 2022 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "OFFER ENDS IN 2 DAYS";
+  }
+}, 1000);
+</script>
+</section>
+</div>
+
+</body>
+</html>

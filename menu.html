@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        nav a{
+            text-decoration:none;
+            color:white;
+            text-align:center;
+            padding:20px;
+            float:left;
+        }
+        nav{
+            background-color:rgb(10, 6, 6);
+            overflow:hidden;
+            position:fixed;
+            width:100%;
+        }
+        nav a:hover{
+            color:#d3ad7f;
+        }
+        div.share{
+            float:right;
+
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+
+
+
+body{
+    background: var(--bg);
+}
+
+
+.heading {
+   
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+section{
+    padding:2rem 7%;
+}
+
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+   
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+
+#menu-btn{
+    display: none;
+}
+
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:var(--border);    
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:#fff;
+}
+
+.menu .box-container .box:hover > *{
+    color:var(--black);
+}
+
+
+
+
+
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="#" class="logo">
+            <img src="1.png" alt="" width="70px">
+        </a>
+        <a href="coffeeshop.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="my_account.html">My Account</a>
+        <a href="menu.html">Menu</a>
+        <a href="payment_form.html">Payment Form</a> 
+
+        <a href="products.html">Products</a>
+       
+        <a href="contact_uss.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        
+        
+        
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="heading">
+
+        
+        <!-- menu section starts  -->
+        <section class="menu" id="menu">
+        
+            <h1 class="heading">Our<span style="color:#d3ad7f;">&nbsp;Menu</span></h1>
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="menu-1.png" alt="">
+                    <h3>Latte coffee</h3>			
+                    <div class="price">195.99 <span>259.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-2.png" alt="">
+                    <h3>Cappuccino</h3>
+                    <div class="price">Rs.199.99 <span>249.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-3.png" alt="">
+                    <h3>Brewed coffee</h3>
+                    <div class="price">Rs.194.99 <span>219.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-4.png" alt="">
+                    <h3>Flat white</h3>
+                    <div class="price">Rs.249.99 <span>279.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-5.png" alt="">
+                    <h3>Chocolate Cappuccino</h3>
+                    <div class="price">Rs. 259.99 <span>289.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-6.png" alt="">
+                    <h3>cofee Mocha</h3>
+                    <div class="price"> Rs.229.99<span>259.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-7.png" alt="">
+                    <h3>Java Chip</h3>
+                    <div class="price"> Rs.259.99<span>289.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+                <div class="box">
+                    <img src="menu-8.png" alt="">
+                    <h3>Caramel/Expresso</h3>
+                    <div class="price"> Rs.259.99<span>289.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+        
+        
+        
+         <div class="box">
+                    <img src="menu-9.png" alt="">
+                    <h3>Vanilla Cream</h3>
+                    <div class="price"> Rs.194.99<span>229.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                
+                 <div class="box">
+                    <img src="menu-10.png" alt="">
+                    <h3>Iced Americano</h3>
+                    <div class="price"> Rs.199.99<span>234.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-11.png" alt="">
+                    <h3>Iced Latte</h3>
+                    <div class="price"> Rs.194.99<span>229.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-12.png" alt="">
+                    <h3>Velet Vanilla Latte</h3>
+                    <div class="price"> Rs.304.99<span>364.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-13.png" alt="">
+                    <h3>Macchiato</h3>
+                    <div class="price"> Rs.229.99<span>259.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-14.png" alt="">
+                    <h3>Expresso</h3>
+                    <div class="price"> Rs.209.99<span>229.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-15.png" alt="">
+                    <h3>Caramel Latte</h3>
+                    <div class="price"> Rs.249.99<span>299.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                 <div class="box">
+                    <img src="menu-16.png" alt="">
+                    <h3>Vanilla/Mocha Latte</h3>
+                    <div class="price"> Rs.199.99<span>249.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+        
+        
+        
+        
+            </div>
+        
+        </section>
+        
+        
+        
+       
+</body>
+</html>
